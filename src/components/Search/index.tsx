@@ -1,13 +1,25 @@
+import React from 'react';
+import './Search.css';
+import { FaSearch } from 'react-icons/fa';
+
 interface ISearch {
   placeholder: string;
   value: string;
-  onChange: () => void;
+  onChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
 }
 
-const Search = (props: ISearch) => {
+const Search = ({ placeholder, value, onChange }: ISearch) => {
   return (
-    <input type="text" placeholder={props.placeholder} value={props.value} />
+    <div className="search-container">
+      <input 
+        type="text" 
+        placeholder={placeholder} 
+        value={value} 
+        onChange={onChange} 
+        className="search-input"
+      />
+      <FaSearch className="search-icon" />
+    </div>
   );
 };
-
 export default Search;

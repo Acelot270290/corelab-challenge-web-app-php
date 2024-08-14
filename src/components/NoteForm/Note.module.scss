@@ -1,0 +1,41 @@
+.note {
+    border-radius: 10px;
+    padding: 1rem;
+    position: relative;
+    transition: background-color 0.3s ease;
+  
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  
+      h2 {
+        margin: 0;
+      }
+  
+      .icons {
+        display: flex;
+        gap: 10px;
+      }
+    }
+  
+    .content {
+      margin-top: 1rem;
+    }
+  
+    .favoriteIcon {
+      cursor: pointer;
+    }
+  
+    .paintIcon {
+      cursor: pointer;
+    }
+  
+    .colorPicker {
+      position: absolute;
+      top: 100%;
+      right: 0;
+      margin-top: 10px;
+    }
+  }
+  

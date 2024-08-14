@@ -1,0 +1,28 @@
+.search-container {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff; /* Cor de fundo do input */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 5px 10px;
+    width: 100%;
+    max-width: 400px; /* Ajuste conforme necessário */
+    position: relative;
+  }
+  
+  .search-input {
+    border: none;
+    outline: none;
+    background: none;
+    width: 100%;
+    padding: 8px;
+    font-size: 14px;
+    color: #333; /* Cor do texto */
+  }
+  
+  .search-icon {
+    width: 16px;
+    height: 16px;
+    margin-left: 8px;
+  }
+  
